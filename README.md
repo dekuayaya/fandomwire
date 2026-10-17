@@ -1,17 +1,60 @@
 # FandomWire
 
-Sitio de noticias y fans de Series (Dragon Ball, JoJo), Música (Twenty One Pilots, Radiohead) y Videojuegos (Brawl Stars, Dream League Soccer).
-Sin dependencias externas: solo Node 22.5+ (usa SQLite integrado).
+Sitio de noticias y fans de **Series** (Dragon Ball, JoJo), **Música** (Twenty One Pilots, Radiohead) y **Videojuegos** (Brawl Stars, Dream League Soccer), con base de datos, login, panel de administración, minijuegos, perfiles, colores personalizables, asistente y "Ahora suena" con Spotify.
 
-## Arrancar
-    npm start            # http://localhost:3000
-Panel de administración: http://localhost:3000/admin.html
+No usa librerías externas: no hay `npm install`. Solo necesita Node.js.
 
-## Cuenta de administrador (se crea la primera vez que arranca)
+## Requisitos
+- **Node.js 22.5 o superior** (recomendado: la versión **22 LTS** o más nueva).
+  Descarga: https://nodejs.org/en/download
+- Un navegador actual (Chrome, Edge, Firefox o Safari).
+- Git (opcional, solo si lo clonas): https://git-scm.com/downloads
+
+Para comprobar tu versión de Node, abre una terminal y escribe:
+
+    node -v
+
+Debe mostrar `v22.5.0` o mayor. Si muestra una versión menor (por ejemplo `v18` o `v20`), el sitio no arranca: instala la nueva desde el enlace de arriba.
+
+## Cómo iniciarlo
+1. **Descarga el proyecto**: en GitHub, botón verde *Code → Download ZIP*, y descomprímelo. O, con Git:
+
+        git clone https://github.com/dekuayaya/fandomwire.git
+
+2. **Abre una terminal dentro de la carpeta** del proyecto (la que tiene `package.json`).
+   - Windows: en el Explorador, entra a la carpeta, escribe `cmd` en la barra de direcciones y pulsa Enter.
+   - Mac/Linux: `cd` hasta la carpeta.
+3. **Inícialo**:
+
+        npm start
+
+4. **Abre** http://localhost:3000 en el navegador.
+
+La primera vez se crea solo la base de datos (carpeta `data/`) con contenido de ejemplo. Para detenerlo, pulsa `Ctrl + C` en la terminal.
+
+Si el puerto 3000 está ocupado, usa otro: en Windows (cmd) `set PORT=3001 && npm start`; en Mac/Linux `PORT=3001 npm start`.
+
+## Panel de administración
+http://localhost:3000/admin.html
+
     usuario:    admin
     contraseña: Admin2026!
-CÁMBIALA al entrar (Cuenta → contraseña) o define antes de arrancar:
+
+**Cámbiala al entrar** (Mi cuenta → contraseña), o define antes de arrancar:
+
     ADMIN_USER=... ADMIN_EMAIL=... ADMIN_PASSWORD=... npm start
+
+(En Windows cmd: `set ADMIN_PASSWORD=tuclave` en una línea y `npm start` en la siguiente.)
+La cuenta de admin solo se crea la primera vez; si ya existe la base de datos, el cambio de variables no la modifica.
+
+## Mostrarlo a otra persona (sin subirlo a un hosting)
+Con el sitio corriendo en tu computador, puedes darle un enlace público temporal con Cloudflare Tunnel o ngrok:
+
+    cloudflared tunnel --url http://localhost:3000
+
+Te muestra una dirección `https://algo.trycloudflare.com`. Funciona mientras tu computador esté encendido, el sitio corriendo y esa ventana abierta. Descarga: https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/downloads/
+
+Si lo expones así, cambia antes la contraseña de admin y define `COOKIE_SECURE=1` (el enlace usa https).
 
 ## Qué incluye
 - **Inicio**: portada de noticias; la noticia completa requiere cuenta. Misión diaria (trivia + XP + racha + ranking) que desbloquea assets.
