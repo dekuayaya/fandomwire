@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Wallpaper de ejemplo · JoJo">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c853e4"/><stop offset="1" stop-color="#902da8"/></linearGradient></defs>
+<rect width="800" height="450" fill="url(#g)"/>
+<polygon points="0,450 260,0 380,0 120,450" fill="#e3a7f1" opacity=".35"/>
+              <polygon points="260,450 520,0 600,0 340,450" fill="#6a217b" opacity=".35"/>
+              <polygon points="520,450 800,0 800,120 640,450" fill="#e3a7f1" opacity=".25"/>
+<rect x="0" y="378" width="800" height="72" fill="#000" opacity=".38"/>
+<text x="32" y="418" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#fff">Wallpaper de ejemplo · JoJo</text>
+<text x="768" y="418" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#fff" opacity=".85">imagen de ejemplo</text>
+</svg>

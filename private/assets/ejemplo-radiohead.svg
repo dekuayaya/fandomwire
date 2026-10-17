@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Cover art de ejemplo">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#537dff"/><stop offset="1" stop-color="#2c50bf"/></linearGradient></defs>
+<rect width="800" height="450" fill="url(#g)"/>
+<circle cx="400" cy="225" r="200" fill="#203b8c" opacity=".55"/>
+              <circle cx="400" cy="225" r="150" fill="none" stroke="#a7bcff" stroke-width="3" opacity=".6"/>
+              <circle cx="400" cy="225" r="105" fill="none" stroke="#a7bcff" stroke-width="3" opacity=".5"/>
+              <circle cx="400" cy="225" r="60" fill="#a7bcff" opacity=".85"/>
+              <circle cx="400" cy="225" r="10" fill="#203b8c"/>
+<rect x="0" y="378" width="800" height="72" fill="#000" opacity=".38"/>
+<text x="32" y="418" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#fff">Cover art de ejemplo</text>
+<text x="768" y="418" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#fff" opacity=".85">imagen de ejemplo</text>
+</svg>

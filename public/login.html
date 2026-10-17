@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar · FandomWire</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#edebf8">
+  <script src="/js/theme.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/app.js" defer></script>
+</head>
+<body data-page="login">
+  <header id="site-header"></header>
+  <main id="main">
+    <div class="wrap">
+      <section class="panel auth-card" aria-label="Acceso">
+        <div class="tabs" role="tablist">
+          <button class="tab" type="button" role="tab" data-tab="login" aria-selected="true">Iniciar sesión</button>
+          <button class="tab" type="button" role="tab" data-tab="register" aria-selected="false">Crear cuenta</button>
+        </div>
+
+        <form id="form-login" novalidate>
+          <div class="field"><label for="l-id">Usuario o email</label><input id="l-id" name="identifier" type="text" autocomplete="username" required></div>
+          <div class="field"><label for="l-pw">Contraseña</label><input id="l-pw" name="password" type="password" autocomplete="current-password" required></div>
+          <p class="form-error" role="alert"></p>
+          <button class="btn btn--accent" type="submit">Entrar</button>
+        </form>
+
+        <form id="form-register" novalidate hidden>
+          <div class="field"><label for="r-user">Nombre de usuario</label><input id="r-user" name="username" type="text" autocomplete="username" minlength="3" maxlength="24" required><small>3 a 24 caracteres: letras, números, _ . -</small></div>
+          <div class="field"><label for="r-mail">Email</label><input id="r-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="r-pw">Contraseña</label><input id="r-pw" name="password" type="password" autocomplete="new-password" minlength="8" required><small>Mínimo 8 caracteres.</small></div>
+          <p class="form-error" role="alert"></p>
+          <button class="btn btn--accent" type="submit">Crear cuenta</button>
+          <ul class="perks">
+            <li>Noticias completas</li>
+            <li>Descarga de assets</li>
+            <li>Misión diaria, racha y ranking</li>
+          </ul>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+</body>
+</html>

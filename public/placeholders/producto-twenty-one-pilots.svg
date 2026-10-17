@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Twenty One Pilots">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eb5956"/><stop offset="1" stop-color="#ae322f"/></linearGradient></defs>
+<rect width="800" height="450" fill="url(#g)"/>
+<rect x="250" y="120" width="300" height="210" rx="18" fill="#802423" opacity=".55"/>
+              <rect x="250" y="120" width="300" height="52" rx="18" fill="#f5aaa9" opacity=".7"/>
+              <rect x="372" y="120" width="56" height="210" fill="#f5aaa9" opacity=".5"/>
+<rect x="0" y="378" width="800" height="72" fill="#000" opacity=".38"/>
+<text x="32" y="418" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#fff">Twenty One Pilots</text>
+<text x="768" y="418" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#fff" opacity=".85">imagen de ejemplo</text>
+</svg>

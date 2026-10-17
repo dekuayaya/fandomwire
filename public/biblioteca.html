@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biblioteca · FandomWire</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#edebf8">
+  <script src="/js/theme.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/app.js" defer></script>
+</head>
+<body data-page="library">
+  <header id="site-header"></header>
+  <main id="main">
+    <div class="wrap">
+      <div class="page-head">
+        <h1>Biblioteca de assets</h1>
+        <p>Imágenes, videoclips, instrumentales, cover arts y más. Mira las miniaturas y descripciones; con tu cuenta puedes verlos completos y descargarlos.</p>
+      </div>
+      <div class="filters" role="search">
+        <label class="sr-only" for="f-section">Sección</label><select id="f-section"></select>
+        <label class="sr-only" for="f-topic">Tema</label><select id="f-topic"></select>
+        <label class="sr-only" for="f-kind">Tipo</label><select id="f-kind"></select>
+        <label class="sr-only" for="f-category">Categoría</label><select id="f-category"></select>
+        <label class="sr-only" for="f-q">Buscar</label><input id="f-q" type="search" placeholder="Buscar assets…">
+        <span class="muted small" id="assets-count" aria-live="polite"></span>
+      </div>
+      <div class="grid" id="assets-grid"></div>
+      <p style="text-align:center;margin-top:28px"><button class="btn btn--ghost" type="button" id="assets-more" hidden>Cargar más</button></p>
+      <div class="block" id="library-gate" hidden>
+        <div class="gate sec-musica"><div><h3>Desbloquea la biblioteca completa</h3><p>Con una cuenta gratis puedes abrir cada archivo y descargarlo. Algunos assets exclusivos se desbloquean juntando XP con la misión diaria.</p></div>
+        <div class="hero__cta"><a class="btn" href="/login.html?tab=register&next=/biblioteca.html">Crear cuenta</a><a class="btn" href="/login.html?next=/biblioteca.html">Iniciar sesión</a></div></div>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+</body>
+</html>

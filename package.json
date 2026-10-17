@@ -1,0 +1,15 @@
+{
+  "name": "fandomwire",
+  "version": "1.0.0",
+  "description": "Sitio de fandoms (series, música, videojuegos) con noticias, biblioteca de assets, ventas, misión diaria y panel de administración.",
+  "main": "server.js",
+  "private": true,
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node --experimental-sqlite --no-warnings server.js",
+    "dev": "node --watch --experimental-sqlite --no-warnings server.js"
+  },
+  "dependencies": {}
+}
