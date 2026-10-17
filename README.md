@@ -17,6 +17,8 @@ Para comprobar tu versión de Node, abre una terminal y escribe:
 Debe mostrar `v22.5.0` o mayor. Si muestra una versión menor (por ejemplo `v18` o `v20`), el sitio no arranca: instala la nueva desde el enlace de arriba.
 
 ## Cómo iniciarlo
+> ¿Primera vez con una terminal? Sigue el **[tutorial paso a paso](TUTORIAL.md)**: explica dónde abrirla y cómo solucionar los errores más comunes.
+
 1. **Descarga el proyecto**: en GitHub, botón verde *Code → Download ZIP*, y descomprímelo. O, con Git:
 
         git clone https://github.com/dekuayaya/fandomwire.git
