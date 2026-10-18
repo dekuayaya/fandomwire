@@ -1,7 +1,5 @@
 # Tutorial: cómo iniciar FandomWire (paso a paso)
 
-Si nunca has usado una terminal, aquí va todo desde cero. Son 4 pasos.
-
 ## Paso 1. Instala Node.js
 1. Entra a https://nodejs.org/en/download y descarga la versión **LTS** (debe ser la 22 o más nueva).
 2. Ejecuta el instalador y deja todas las opciones por defecto (Siguiente, Siguiente…).
